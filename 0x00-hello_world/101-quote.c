@@ -1,18 +1,15 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<unistd.h>
 
 /**
  * main - First point
  *
- * Description: A C program that prints a quote
+ * Description: A C Program printing a quote
  *
- * Return: For This Case we return an error 1.
+ * Return: This time error 1
  */
-
 int main(void)
 {
-	char quo[] =  "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-
-
-	write(sizeof(quo), sizeof(char));
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+			sizeof("and that piece of art is useful\" - Dora Korpar, 2015-10-19"));
 	return (1);
-}
