@@ -1,8 +1,8 @@
 #include<stdio.h>
 /**
- * main - First point
- * program printing 3digits
- * Return: always 0 (Success)
+ * main - First point$
+ * program print all possible different combination
+ * Return: Always 0 ( Success)
  */
 int main(void)
 {
@@ -16,17 +16,17 @@ int main(void)
 			{
 				if ((j != i) != k)
 				{
-					putchar(i);
-					putchar(j);
-					putchar(k);
-				if (i == 7 && j == 8)
-					continue;
-					putchar(';');
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					if (i == 7 && j == 8)
+						continue;
+					putchar(',');
 					putchar(' ');
 				}
 			}
 		}
 	}
-	putchar ('\n');
+	putchar('\n');
 	return (0);
 }
