@@ -1,10 +1,9 @@
-#include<stdio.h>
+#include"main.h"
 /**
  * main - First point
- * description : A c program which prints _putchar
- * Reurn: Always 0 (success)
+ * desription: print _putchar
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
 	putchar('_');
