@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include<stdio.h>
 /**
  * main - check the code
  * print_to_98 : PRINT ALL NUMBER TO IMPUT ç_
