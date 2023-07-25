@@ -30,5 +30,5 @@ break;
 r = r * 10 + (s[i] - '0');
 i++;
 }
-return (s) * (r);
+return s * r;
 }
