@@ -1,14 +1,13 @@
 #include "main.h"
 /**
- * verify_prime : check if the number is prime
+ * verify_prime - check if the number is prime
  * @n: int
  * @m: int
- * Return : number
- * 
+ * Return: number
 */
-int verify_prime(int n ,  int m)
+int verify_prime(int n, int m)
 {
-if (m < 2 || m % n ==0)
+if (m < 2 || m % n == 0)
 return (0);
 else if (n > m / 2)
 return (1);
