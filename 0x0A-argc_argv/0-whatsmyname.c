@@ -5,7 +5,7 @@
  * @argv: int
  * Return: 0
 */
-int main(int argc, char const *argv[])
+int main(int argc, char *argv[])
 {
 int i = 0;
 (void) argc;
