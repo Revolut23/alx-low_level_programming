@@ -3,24 +3,19 @@
 /**
  * sum_them_all - adds all the numbers
  * @n: the number of parameters passed
- * Return: Always 0
+ * Return: integer sum
  */
 
 int sum_them_all(const unsigned int n, ...)
 {
-	int sum;
-	unsigned int i;
-	va_list res;
+	int s = 0, i = n;
+	va_list ap;
 
-	va_start(res, n);
-
-	if (n == 0)
+	if (!n)
 		return (0);
-
-	for (i = 0; i < n; i++)
-		sum += va_arg(res, int);
-
-	va_end(res);
-
-	return (sum);
+	va_start(ap, n);
+	while (i--)
+		s += va_arg(ap, int);
+	va_end(ap);
+	return (s);
 }
